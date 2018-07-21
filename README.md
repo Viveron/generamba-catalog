@@ -4,7 +4,8 @@ Catalog of [Generamba](https://github.com/rambler-digital-solutions/Generamba) t
 
 # How to use
 
-1. Install and setup Generamba
+0. Install Generamba
+1. Run ```generamba setup``` in the project root folder for crate ```Rambafile```
 2. Update ```Rambafile``` catalogs and templates list:
 ```
 ### Templates
