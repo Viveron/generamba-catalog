@@ -16,3 +16,7 @@ templates:
 ```
 3. Run ```generamba template install``` for obtain templates
 4. Run ```generamba gen [MODULE_NAME] [TEMPLATE_NAME] --module_path [PATH]``` to generate template module at specific path if you use the same paths both in the filesystem and Xcode
+
+# Info
+
+If have some trouble with module generation see [#203](https://github.com/rambler-digital-solutions/Generamba/issues/203) and that may be helpful.
