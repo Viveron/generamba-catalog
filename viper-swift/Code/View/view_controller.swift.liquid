@@ -1,0 +1,27 @@
+{% include 'header' %}
+
+import UIKit
+
+class {{ prefix }}{{ module_info.name }}ViewController: UIViewController {
+
+    private var _view: {{ prefix }}{{ module_info.name }}View {
+        return view as! {{ prefix }}{{ module_info.name }}View
+    }
+
+    var output: {{ prefix }}{{ module_info.name }}ViewOutput!
+
+    override func loadView() {
+        self.view = {{ prefix }}{{ module_info.name }}View()
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        output.viewDidLoad()
+    }
+}
+
+// MARK: - {{ prefix }}{{ module_info.name }}ViewInput
+extension {{ prefix }}{{ module_info.name }}ViewController: {{ prefix }}{{ module_info.name }}ViewInput {
+
+}

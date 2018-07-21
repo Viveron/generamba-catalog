@@ -1,0 +1,27 @@
+{% include 'header' %}
+
+import Foundation
+
+final class {{ prefix }}{{ module_info.name }}Assembly {
+    
+    static func createModule(_ configuration: (({{ prefix }}{{ module_info.name }}ModuleInput) -> Void)? = nil) -> UIViewController {
+        let view = {{ prefix }}{{ module_info.name }}ViewController()
+        let interactor = {{ prefix }}{{ module_info.name }}Interactor()
+        let presenter = {{ prefix }}{{ module_info.name }}Presenter()
+        let router = {{ prefix }}{{ module_info.name }}Router()
+        
+        view.output = presenter
+        
+        presenter.view = view
+        presenter.router = router
+        presenter.interactor = interactor
+        
+        router.transitionHandler = view
+        
+        if let configuration = configuration {
+            configuration(presenter)
+        }
+        
+        return view
+    }
+}

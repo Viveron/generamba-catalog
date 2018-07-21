@@ -1,0 +1,22 @@
+{% include 'header' %}
+
+import UIKit
+
+class {{ prefix }}{{ module_info.name }}View: UIView {
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+
+        makeConstraints()
+    }
+
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
+    // MARK: - Private methods
+
+    private func makeConstraints() {
+
+    }
+}
