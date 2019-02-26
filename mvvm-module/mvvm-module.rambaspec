@@ -1,0 +1,22 @@
+# Template information section
+name: "mvvm-module"
+summary: "MVVM module template"
+author: "Victor Shababnov"
+version: "1.0.0"
+license: "MIT"
+
+# The declarations for code files
+code_files:
+
+# Assembly layer
+- {name: Assembly/Module.swift, path: Code/Assembly/module.swift.liquid}
+- {name: Assembly/ModuleAssembly.swift, path: Code/Assembly/module_assembly.swift.liquid}
+
+# View layer
+- {name: View/ViewInput.swift, path: Code/View/view_input.swift.liquid}
+- {name: View/ViewOutput.swift, path: Code/View/view_output.swift.liquid}
+- {name: View/ViewController.swift, path: Code/View/view_controller.swift.liquid}
+- {name: View/View.swift, path: Code/View/view.swift.liquid}
+
+# View Model layer
+- {name: View/ViewModel.swift, path: Code/View/view_model.swift.liquid}
