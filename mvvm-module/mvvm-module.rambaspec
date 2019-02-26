@@ -19,4 +19,4 @@ code_files:
 - {name: View/View.swift, path: Code/View/view.swift.liquid}
 
 # View Model layer
-- {name: View/ViewModel.swift, path: Code/View/view_model.swift.liquid}
+- {name: View/ViewModel.swift, path: Code/ViewModel/view_model.swift.liquid}
