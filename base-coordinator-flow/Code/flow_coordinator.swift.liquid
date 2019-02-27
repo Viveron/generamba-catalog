@@ -8,9 +8,7 @@ final class {{ prefix }}{{ module_info.name }}FlowCoordinator: BaseCoordinator {
     private let instructor: {{ prefix }}{{ module_info.name }}FlowInstructor
     private let moduleFactory: {{ prefix }}{{ module_info.name }}FlowFactory
 
-    // MARK: - Coordinator inter
-
-    var onFinish: ValueBlock<Coordinatable>?
+    // MARK: - Coordinator interface
 
     init(router: <#[Root|Stack|Modal]#>Routable) {
         self.router = router
@@ -20,7 +18,7 @@ final class {{ prefix }}{{ module_info.name }}FlowCoordinator: BaseCoordinator {
 
     // MARK: - Coordinatable
 
-    func start() {
+    override func start() {
         <#code#>
     }
 
