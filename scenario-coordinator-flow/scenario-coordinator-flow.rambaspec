@@ -1,6 +1,6 @@
 # Template information section
-name: "base-coordinator-flow"
-summary: "Coordinatable pattern flow template for BaseCoordinator"
+name: "scenario-coordinator-flow"
+summary: "Coordinatable pattern flow template for ScenarioCoordinator"
 author: "Victor Shababnov"
 version: "1.0.0"
 license: "MIT"

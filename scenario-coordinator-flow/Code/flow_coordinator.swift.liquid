@@ -1,0 +1,46 @@
+{% include 'header' %}
+
+import Foundation
+
+final class {{ prefix }}{{ module_info.name }}FlowCoordinator: ScenarioCoordinator<{{ prefix }}{{ module_info.name }}FlowScenario> {
+
+    private let router: <#[Root|Stack|Modal]#>Routable
+    private let instructor: {{ prefix }}{{ module_info.name }}FlowInstructor
+    private let moduleFactory: {{ prefix }}{{ module_info.name }}FlowFactory
+
+    // MARK: - Coordinator interface
+
+    init(router: <#[Root|Stack|Modal]#>Routable) {
+        self.router = router
+        self.instructor = {{ prefix }}{{ module_info.name }}FlowInstructor()
+        self.moduleFactory = {{ prefix }}{{ module_info.name }}FlowFactory()
+    }
+
+    // MARK: - Coordinatable
+
+    override func start() {
+        start(with: <#{{ prefix }}{{ module_info.name }}FlowScenario#>)
+    }
+
+    override func start(with scenario: {{ prefix }}{{ module_info.name }}FlowScenario) {
+        <#code#>
+    }
+
+    // MARK: - Modules
+
+    private func show<#Name#>Module() {
+
+    }
+
+    // MARK: - Coordinators
+
+    private func start<#Name#>Flow() {
+
+    }    
+
+    // MARK: - Private methods
+
+    private func finishFlow() {
+        onFinish?(self)
+    }
+}
