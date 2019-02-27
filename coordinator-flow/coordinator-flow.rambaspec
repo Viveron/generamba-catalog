@@ -1,0 +1,15 @@
+# Template information section
+name: "coordinator-flow"
+summary: "Coordinatable pattern flow template"
+author: "Victor Shababnov"
+version: "1.0.0"
+license: "MIT"
+
+# The declarations for code files
+code_files:
+
+# Flow layer
+- {name: FlowCoordinator.swift, path: Code/flow_coordinator.swift.liquid}
+- {name: FlowInstructor.swift, path: Code/flow_instructor.swift.liquid}
+- {name: FlowScenario.swift, path: Code/flow_scenario.swift.liquid}
+- {name: FlowFactory.swift, path: Code/flow_factory.swift.liquid}

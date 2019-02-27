@@ -1,0 +1,38 @@
+{% include 'header' %}
+
+import Foundation
+
+final class {{ prefix }}{{ module_info.name }}FlowCoordinator: Coordinatable {
+
+    private let router: <#[Root|Stack|Modal]#>Routable
+    private let instructor: {{ prefix }}{{ module_info.name }}FlowInstructor
+    private let moduleFactory: {{ prefix }}{{ module_info.name }}FlowFactory
+
+    // MARK: - Coordinator inter
+
+    var onFinish: ValueBlock<Coordinatable>?
+
+    init(router: <#[Root|Stack|Modal]#>Routable) {
+        self.router = router
+        self.instructor = {{ prefix }}{{ module_info.name }}FlowInstructor()
+        self.moduleFactory = {{ prefix }}{{ module_info.name }}FlowFactory()
+    }
+
+    // MARK: - Coordinatable
+
+    func start() {
+        <#code#>
+    }
+
+	// MARK: - Modules
+
+	private func show<#Name#>Module() {
+
+	}
+
+    // MARK: - Private methods
+
+    private func finishFlow() {
+        onFinish?(self)
+    }
+}
