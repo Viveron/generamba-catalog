@@ -1,0 +1,9 @@
+{% include 'header' %}
+
+import Foundation
+import LeadKit
+
+protocol {{ prefix }}{{ module_info.name }}Module: Presentable {
+    
+    var onClose: VoidBlock? { get set }
+}
