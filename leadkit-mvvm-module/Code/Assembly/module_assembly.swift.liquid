@@ -6,7 +6,7 @@ final class {{ prefix }}{{ module_info.name }}ModuleAssembly {
     
     static func createModule() -> {{ prefix }}{{ module_info.name }}Module {
         let viewModel = {{ prefix }}{{ module_info.name }}ViewModel()
-        let view = {{ prefix }}{{ module_info.name }}ViewController(viewModel)
+        let view = {{ prefix }}{{ module_info.name }}ViewController(viewModel: viewModel)
         
         viewModel.view = view
         
